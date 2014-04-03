@@ -1,6 +1,7 @@
 language: c
 before_install:
   - wget https://gist.githubusercontent.com/jasonmp85/9535149/raw/324700843b51c2be8e241cb009e692ce0fa56eb7/pg-travis-test.sh
+  - sudo apt-get update
   - sudo apt-get install protobuf-c-compiler
   - sudo apt-get install libprotobuf-c0-dev
   - chmod 777 data

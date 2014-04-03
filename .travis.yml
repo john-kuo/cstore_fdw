@@ -7,6 +7,7 @@ before_install:
   - chmod 777 data
   - chmod 666 data/*
   - sudo locale-gen da_DK
+  - sudo locale-gen da_DK.utf8
 cache: apt
 env:
   - PGVERSION=9.3 PG_PRELOAD=cstore_fdw

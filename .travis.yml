@@ -1,0 +1,9 @@
+language: c
+before_install:
+  - wget https://gist.githubusercontent.com/jasonmp85/9535149/raw/98705344f62460f2f8b70e9276c0240f65584bce/pg-travis-test.sh
+  - sudo apt-get install protobuf-c-compiler
+  - sudo apt-get install libprotobuf-c0-dev
+cache: apt
+env:
+  - PGVERSION=9.3 PG_PRELOAD=cstore_fdw
+script: bash ./pg-travis-test.sh

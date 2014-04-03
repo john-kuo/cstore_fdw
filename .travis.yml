@@ -6,6 +6,7 @@ before_install:
   - sudo apt-get install libprotobuf-c0-dev
   - chmod 777 data
   - chmod 666 data/*
+  - sudo locale-gen da_DK
 cache: apt
 env:
   - PGVERSION=9.3 PG_PRELOAD=cstore_fdw
